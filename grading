@@ -1,0 +1,45 @@
+import java.util.Scanner;
+/**Q. Write a program to display a greet message according to Marks obtained by
+student.**/
+public class assg6
+{
+public static void main()
+{
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter your marks.&quot;);
+x= sc.nextInt();
+if(x&lt;101)
+{
+if(x&gt;80)
+{
+System.out.println(&quot;Congrats on this outstanding performance!&quot;);
+}
+else if(x&gt;60)
+{
+System.out.println(&quot;Good work. Keep it up.&quot;);
+}
+
+else if(x&gt;40)
+{
+System.out.println(&quot;You need to start working harder and get those numebrs up.&quot;);
+
+}
+
+else if(x&gt;=0)
+{
+System.out.println(&quot;Abysmal score, you need to meet you teacher ASAP.&quot;);
+}
+else
+{
+System.out.println(&quot;Error! Please enter number between 0 to 100&quot;);
+
+}
+}
+else
+{
+System.out.println(&quot;Error! Please enter number between 0 to 100&quot;);
+
+}
+}
+}
