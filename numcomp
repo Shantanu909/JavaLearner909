@@ -1,0 +1,40 @@
+import java.util.Scanner;
+/**Q. Write down a Java program finds largest of three numbers and then prints it.*/
+public class assg4
+{
+public static void main(String args[])
+{
+double num1,num2,num3;
+boolean b1,b2,b3,b4,b5,b6,b7,b8;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter 1st number.&quot;);
+num1= sc.nextDouble();
+System.out.println(&quot;Please enter 2nd number.&quot;);
+num2= sc.nextDouble();
+System.out.println(&quot;Please enter 3rd number.&quot;);
+num3= sc.nextDouble();
+b1 = num1&gt;num3;
+b2 = num1&gt;num2;
+b3 = num2&gt;num1;
+b4 = num2&gt;num3;
+b5 = num3&gt;num1;
+b6 = num3&gt;num2;
+if(b1&amp;&amp;b2==true)
+{
+System.out.println(&quot;The greatest number is &quot;+num1);
+}
+
+else if(b3&amp;&amp;b4==true)
+{
+System.out.println(&quot;The greatest number is &quot;+num2);
+}
+else if(b5&amp;&amp;b6==true)
+{
+System.out.println(&quot;The greatest number is &quot;+num3);
+}
+else if(num1==num2&amp;&amp;num2==num3)
+{
+System.out.println(&quot;The numbers are not distinct.&quot;);
+}
+}
+}
