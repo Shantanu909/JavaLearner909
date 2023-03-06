@@ -1,0 +1,41 @@
+import java.util.Scanner;
+import java.lang.Math;
+/** Write down a Java program checks if a number is Armstrong or not.
+**/
+public class assg1
+{
+public static void main(String args[])
+{
+int x,arr[],sum1=0;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter the number of digits in your number&quot;);
+x = sc.nextInt();
+arr = new int[x];
+System.out.println(&quot;Please enter your number in a reverse order with a enter between each key.&quot;);
+for(int i=0;i&lt;x;i++)
+{
+arr[i]= sc.nextInt();
+double q = Math.pow(10,i);
+int a = (int) q;
+int h = a*arr[i];
+sum1 = sum1+h;
+}
+int sum =0;
+for(int i=0; i&lt;x;i++)
+{
+
+int z = arr[i];
+double u = Math.pow(z,x);
+int j = (int) u;
+sum = sum+j;
+}
+if(sum==sum1)
+{
+System.out.println(&quot;It is an Armstorng number.&quot;);
+}
+else
+{
+System.out.println(&quot;It is not an Armstorng number.&quot;);
+}
+}
+}
