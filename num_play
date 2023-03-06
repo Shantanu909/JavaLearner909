@@ -1,0 +1,23 @@
+import java.util.Scanner;
+/**Q. Write a program that will read a float type value from the keyboard and print
+the following output.
+&gt;Small Integer not less than the number.
+-&gt;Given Number.
+-&gt;Largest Integer not greater than the number.*/
+
+public class assg5
+{
+public static void main(String args[])
+{
+float num1;
+int small,large;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter your number.&quot;);
+num1= sc.nextFloat();
+small =(int) num1;
+System.out.println(&quot;Small Integer not less than the number.&quot;+small);
+System.out.println(&quot;Given number.&quot;+num1);
+large = small-1;
+System.out.println(&quot;Largest Integer not greater than the number.&quot;+large);
+}
+}
