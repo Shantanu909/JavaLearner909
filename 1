@@ -1,0 +1,71 @@
+import java.util.Scanner;
+public class exp1
+{
+public static void main(String args[])
+{
+int a,b,c,d,n;
+Scanner sc = new Scanner(System.in);
+
+System.out.println(&quot;Please input your first number.&quot;);
+
+a= sc.nextInt();
+System.out.println(&quot;Please enter your second number&quot;);
+b= sc.nextInt();
+System.out.println(&quot;please select the operation as you require.&quot;);
+System.out.println(&quot;1.Addition&quot;);
+System.out.println(&quot;2.Subtraction&quot;);
+System.out.println(&quot;3.Division&quot;);
+System.out.println(&quot;4.Multiplication&quot;);
+System.out.println(&quot;5.Remainder&quot;);
+n= sc.nextInt();
+switch(n)
+{
+case 1:
+{
+d= a+b;
+
+System.out.println(&quot;Sum =&quot;+d);
+break;
+}
+case 2:
+{
+if(a&gt;b)
+{
+d= b-a;
+System.out.printf(&quot;Difference=&quot;+d);
+}
+else
+{
+d= b-a;
+System.out.printf(&quot;Difference=&quot;+d);
+}
+
+break;
+}
+case 3:
+{
+d= a*b;
+System.out.println(&quot;Product =&quot;+d);
+break;
+}
+case 4:
+
+{
+d= a/b;
+System.out.println(&quot;Quotient =&quot;+d);
+break;
+}
+case 5:
+{
+d= a%b;
+System.out.println(&quot;Quotient =&quot;+d);
+break;
+}
+default:
+{
+System.out.println(&quot;Please select the correct options.&quot;);
+}
+}
+}
+
+}
