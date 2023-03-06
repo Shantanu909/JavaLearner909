@@ -1,0 +1,20 @@
+import java.util.Scanner;
+/**Q. Write down a Java program finds if a number is odd or even.**/
+public class assg2
+{
+public static void main()
+{
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter the number to be checked.&quot;);
+x= sc.nextInt();
+if(x%2==0)
+{
+System.out.println(&quot;Your number is even.&quot;);
+}
+else
+{
+System.out.println(&quot;Your number is even.&quot;);
+}
+}
+}
