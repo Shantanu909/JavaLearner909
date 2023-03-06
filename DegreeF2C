@@ -1,0 +1,15 @@
+import java.util.Scanner;
+/**Q. Write down a Java program to convert Fahrenheit to Celsius.*/
+public class assg3
+{
+public static void main(String args[])
+{
+double x,y;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter the temp in Farheniet.&quot;);
+x= sc.nextDouble();
+y= x-32;
+double cel = (y*5)/9;
+System.out.println(&quot;Your temp in celsius is &quot;+cel);
+}
+}
