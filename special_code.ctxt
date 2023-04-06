@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=special_code
+comment0.text=Q.\ Write\ a\ program\ that\ will\ read\ a\ float\ type\ value\ from\ the\ keyboard\ and\ print\r\nthe\ following\ output.\r\n>Small\ Integer\ not\ less\ than\ the\ number.\r\n->Given\ Number.\r\n->Largest\ Integer\ not\ greater\ than\ the\ number.
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

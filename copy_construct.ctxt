@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=copy_construct
+comment1.params=
+comment1.target=copy_construct()
+comment2.params=a
+comment2.target=copy_construct(copy_construct)
+numComments=3
