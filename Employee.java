@@ -1,69 +1,58 @@
-//3. Write a java program to display the employee details using Scanner class.
-//4. Write a java program that checks whether a given string is palindrome or not.
+/**Q9. Write a program by creating an 'Employee' class having the following methods and print
+the final salary. 
+1 - 'getInfo()' which takes the salary, number of hours of work per day of employee as
+parameter
+2 - 'AddSal()' which adds $10 to salary of the employee if it is less than $500.
+3 - 'AddWork()' which adds $5 to salary of employee if the number of hours of work per
+day is more than 6 hours.
+*/
+
+
+
 import java.util.Scanner;
-import java.lang.String;
-import java.util.*;
 public class Employee
 {
-       
-        int age;
-        char gen;
-        int emp_id;
-        String name;
-        
-    
-    public static void main(String args[])
-    {
-         Employee emp = new Employee();
-        Scanner sc = new Scanner(System.in);
-        char choice;
-        System.out.println("Welcome to the program for employee details. ");
-        System.out.println("Do you want to enter employee details.");
-        System.out.println("Type Y for Yes, D for display and N for No.");
-        choice = sc.next().charAt(0);
+static void main(String args[])
+{
+ System.out.println("Wecome to salary monitoring program.");
+ System.out.println("Please enter necessary details as follows:");
+ getInfo();
+ int temp = getInfo.salary;
+ System.out.println("Your final salary is:"+temp);
+ 
+}
 
-        if(choice == 'Y')
-        {
-            emp.emp_get();
-            
-            
-        }
-       // if(choice=='D')
-       // {
-         //   emp.emp_disp();
-       // }
-        else 
-        {
-            System.out.println("Thank you for joining us.");
-            System.exit(0);
-        }
-        System.out.println("Pleae enter you name.");
 
-     }
-    //collection framework
+static void getInfo()
+{
+Scanner sc = new Scanner(System.in)
+System.out.println("Please enter the number of hours of work per day.");
+int hr = sc.nextInt();
+System.out.println("Please enter your salary.");
+int salary = sc.nextInt();
+}
 
-    public  void emp_get()
-    {
-        
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter your age ");
-        age = sc.nextInt();
-        System.out.println("Please enter your name ");
-        name = sc.nextLine();
-        System.out.println("Please enter your emplyee id");
-        emp_id = sc.nextInt();
-        System.out.println("Please enter your Gender acronym ");
-        gen = sc.next().charAt(0);
-       System.out.println("Your age: "+age);
-            System.out.println("Your employee id: "+emp_id);
-            System.out.println("Your gender: "+gen);
-            System.out.println("Your name:" +name);
-        
-    }
-    
-  //  public void emp_disp()
-   //     {
-   //         
-   //     }
-    } 
-    
+
+static void AddSal()
+{
+int w = getInfo.salary;
+if(w<500)
+{ 
+ getInfo.salary= w+10;
+}
+}
+
+
+
+static void AddWork()
+{
+int q = getInfo.hr;
+int e = getInfo.salary;
+if(q>6)
+{
+ getInfo.salary = e+5;
+}
+}
+
+
+}
