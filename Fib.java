@@ -1,3 +1,5 @@
+package exam;
+
 /**Q2. Write a program to print fibonacci series based on the user input in Java.*/
 
 import java.util.Scanner;
@@ -10,7 +12,7 @@ int i;
  Scanner sc = new Scanner(System.in);
  System.out.println("Please enter how long the number is.");
  int n = sc.nextInt();
- int arr = new int[n];
+ int arr[] = new int[n];
  System.out.println("Please enter first two digits after a enter key.");
  for( i =0; i <2;i++)
  {
@@ -23,7 +25,7 @@ int i;
   arr[j]= arr[k]+arr[u];
  }
  System.out.print("Your sequence is:");
- for( int a =;a<n;a++)
+ for( int a =0;a<n;a++)
  {
    int y = arr[a];
   System.out.print(""+y);

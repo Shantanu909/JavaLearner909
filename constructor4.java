@@ -35,7 +35,7 @@ public class constructor4
        else
        {
         }
-       
+       System.out.println("Your cubed value is: "+cube);
     }
       public static void main(String args[])
    {

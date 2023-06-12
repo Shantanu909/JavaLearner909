@@ -2,7 +2,7 @@ package Constructor;
 import java.util.*;
 public class copy_construct
 {
-     copy_constrcutor()
+     copy_construct()
     {
         System.out.println("Welcome to th code for copy constructing.");
     }
@@ -24,8 +24,7 @@ public class copy_construct
        copy_construct d = new copy_construct();
        
        copy_construct c = new copy_construct(d);
-       d.display();
-       c.display();
+
        
     
    }
